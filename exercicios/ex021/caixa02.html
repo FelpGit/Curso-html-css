@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      html, body {
+        font-family: sans-serif;
+        background-color: rgb(116, 116, 116);
+        margin: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      main{
+        flex: 1;
+      }
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 40px 40px 0px 0px;
+      }
+      nav {
+        background-color: rgb(102, 102, 102);
+        padding: 3px;
+        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.378);
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+        height: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav:hover {
+        height: 100px;
+      }
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+        transition: all 0.3s ease-in-out;
+      }
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 0px 0px 40px 40px;
+        flex: 1;
+      }
+      article {
+        background-color: lightgray;
+        padding: 10px;
+        overflow: hidden;
+        border-radius: 5px 40px 40px 40px;
+      }
+      article > aside {
+        background-color: rgb(144, 142, 142);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        height: 30px;
+        padding: 10px;
+
+        transition: all 0.5s ease-in-out;
+      }
+      aside:hover{
+        height: 500px;
+      
+
+      }
+      aside:hover::-webkit-scrollbar{
+        width: 12px;
+      }
+      article > aside > p{
+        margin: 5px;
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: auto;
+        width: 100%;
+        flex-grow: 1;
+      }
+      footer > p {
+        margin: 0;
+        height: 100%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos"></section>
+      <section id="noticias">
+        <article>
+          <h2>Notícias sobre o Brasil</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            ullam commodi tempora inventore quas doloribus illo, consequuntur
+            aut deleniti sapiente pariatur. Inventore quibusdam modi neque. Est
+            labore corporis nostrum possimus?
+          </p>
+          <aside>
+            <p>Artigo escrito por José da Silva </p>
+            <br>
+            <p>Nascido em uma pequena cidade do interior de Minas Gerais, José da Silva sempre teve uma paixão pela verdade e pelas histórias do povo. Filho de um pedreiro e uma professora, cresceu ouvindo relatos de dificuldades, lutas e superações, o que moldou sua visão crítica do mundo.<br><br>
+              Desde pequeno, José rabiscava notícias em folhas de caderno, imitando os jornais que seu pai trazia para casa após o trabalho. Aos 16 anos, conseguiu uma bolsa para estudar jornalismo na capital e, com muito esforço, formou-se com honras.   <br><br>     
+              🔎 Carreira e Impacto
+              José começou cobrindo pequenas reportagens sobre bairros esquecidos, denunciando problemas de infraestrutura e corrupção. Seu talento para contar histórias reais com emoção o levou a grandes jornais, onde se especializou em jornalismo investigativo.
+              <br><br>  
+              Suas matérias ajudaram a expor escândalos políticos, desvios de verbas e injustiças sociais. Em uma de suas reportagens mais marcantes, ele revelou um esquema de exploração de trabalhadores em uma fábrica clandestina, resultando na libertação de dezenas de pessoas.
+              <br><br>  
+              🌎 Reconhecimento e Perigos
+              Ao longo dos anos, José recebeu prêmios por seu compromisso com a verdade, mas também enfrentou ameaças e censura. Apesar dos riscos, nunca recuou. Seu lema sempre foi:
+              <br><br>  
+              “O jornalista não deve temer a verdade, porque a verdade é o que protege o povo.”
+              <br><br>  
+              📜 O Legado de José da Silva
+              Atualmente, José é referência no jornalismo nacional, inspirando jovens repórteres a buscarem a verdade com ética e coragem. Mesmo após décadas de profissão, ainda é visto nas ruas, gravador em mãos, ouvindo as histórias de quem precisa ser ouvido.
+              
+              </p>
+          </aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido pelo Cursoemvideo</p>
+    </footer>
+  </body>
+</html>

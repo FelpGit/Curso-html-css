@@ -1,0 +1,19 @@
+p{
+    font-family: monospace;
+    border-right: 2px solid;
+    white-space: nowrap;
+    width: 13ch;
+    overflow: hidden;
+    animation: animaMarcador 0.5s linear infinite;
+    animation: animaTexto steps(13) 2s;
+}
+@keyframes animaMarcador{
+    50%{
+        border-right: transparent;
+    }
+}
+@keyframes animaTexto{
+    0%{
+        width: 0;
+    }
+}

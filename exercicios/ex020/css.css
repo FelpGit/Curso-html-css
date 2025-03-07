@@ -1,0 +1,38 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.quadrado:nth-child(2n){
+    background-image: linear-gradient(to bottom, rgb(0, 30, 255), rgb(148, 0, 136));
+}
+.quadrado:nth-child(2n+1){
+    background-image: linear-gradient(to top, rgb(14, 1, 193), rgb(191, 2, 175));
+}
+.quadrado{
+    height: 500px;
+    width:80px;
+    border-radius: 50px;
+    margin: 7px;
+    transition: width 0.7s;
+
+}
+.quadrado:hover{
+    width: 200px;
+}

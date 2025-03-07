@@ -1,0 +1,30 @@
+@font-face {
+        font-family: 'Kid';
+        src: url('Momentz.otf') format('opentype'), url('Momentz.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: sans R;
+    font-size: 3em;
+    font-weight: 100;
+    color: #7158fe;
+    background-color: rgb(2, 23, 124);
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+    height: 60px;
+    border-color: black;
+}
+h1:hover{
+    height: 200px;
+    
+}
+    
+p{
+    text-align: justify;
+    }

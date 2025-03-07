@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+    font: normal 16px Arial, Verdana, serif;
+    text-align: left;
+}
+.container{
+    display: flex;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    background-color: rgb(151, 151, 151);
+    border-radius: 1em;
+    padding: 10px;
+    margin: 0 auto;
+    transition: all 0.7s ease-in-out;
+    width: 5em;
+    height: 1.2em;
+}
+h2:hover{
+    height: 6em;
+    width: 20em;
+}
+p{
+    text-align: justify;
+    text-indent: 2em;
+}
